@@ -1,3 +1,9 @@
+# Work in Progress
+
+Version 2.0
+
+Based on the following template
+
 # Template WordPress project
 
 Use this template to bootstrap a new WordPress project for use in the MOJ docker hosting environment.

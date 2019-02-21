@@ -1,0 +1,28 @@
+/* 
+    Created on : 19-Nov-2013, 11:58:19
+    Author     : ryanajarrett
+*/
+
+#post .type-checkbox .format-setting-inner p {
+    width: 20%;
+}
+#post .format-setting.type-checkbox label, .format-setting.type-radio label {
+    float: none;
+}
+#ui-datepicker-div {
+    z-index: 2 !important;
+}
+
+/* Style custom search in hearings wp-admin */
+ul.sortable li {
+    line-height: 2em;
+    border: 1px solid #999;
+    padding: 5px 10px;
+    background-color: #efefef;
+    cursor: move;
+    color: #317474;
+}
+.refresh-sortable {
+    padding: 5px 20px;
+    margin: 0;
+}

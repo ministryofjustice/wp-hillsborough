@@ -1,0 +1,657 @@
+ /*
+    Created on : 15-Nov-2013, 09:28:11
+    Author     : ryanajarrett
+*/
+
+/* General */
+a, a:visited {
+    text-decoration: none;
+    color: #317474;
+}
+a:hover {
+    color: #317474;
+    text-decoration: underline;
+}
+#content {
+    max-width: 990px;
+    margin: 0 auto;
+}
+#primary {
+    float: none;
+    overflow: hidden;
+    margin-right: 15px;
+}
+#secondary {
+    width: 200px;
+    float: left;
+    margin: 30px 15px 0 0;
+}
+h1 {
+    font-size: 2.1em;
+    color: #333;
+    font-weight: normal;
+    margin-top: 30px;
+    margin-bottom: 22px;
+}
+h2 {
+    font-size: 1.85em;
+    color: #317474;
+    font-weight: normal;
+    clear: both;
+    /*-webkit-margin-before: 0.83em;*/
+    -webkit-margin-after: 0.83em;
+}
+h3 {
+    font-size: 1.4em;
+    color: #333;
+    font-weight: normal;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+}
+h4 {
+    font-size: 1.1em;
+    color: #317474;
+    font-weight: bold;
+}
+.highlighted-box {
+    margin: 0;
+    background-color: #e9f2f2;
+    padding: 4px 15px 3px;
+}
+#main {
+    float: none;
+    overflow: hidden;
+}
+.col-3 {
+    width: 30%;
+    margin-right: 3.3%;
+    float: left;
+}
+
+/* Header */
+#masthead {
+    width: 100%;
+    background-color: #317474;
+    padding: 20px 0 15px 0;
+    border-bottom: 20px solid #333;
+}
+.site-branding {
+    max-width: 990px;
+    margin: 5px auto 0;
+}
+.site-branding img {
+    max-width: 98%;
+    float: left;
+    margin-left: 1%;
+    margin-right: 1%;
+}
+#breadcrumbs-wrapper {
+    width: 100%;
+    background-color: #efefef;
+    border-top: 10px solid #666;
+    background: #efefef;
+    min-height: 35px;
+    padding: 0;
+    overflow: hidden;
+}
+#breadcrumbs {
+    max-width: 990px;
+    margin: 10px auto;
+    font-size: 0.9em;
+    height: 0;
+}
+#breadcrumbs ul {
+    padding: 0;
+    margin: 0 17px 10px;
+}
+#breadcrumbs ul li {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    white-space: nowrap;
+}
+#breadcrumbs ul li.breadcrumb-child {
+    /*margin-right: 5px;*/
+}
+#breadcrumbs ul li.breadcrumb-child:before {
+    content: "» ";
+    margin-left: 5px;
+}
+h1.menu-toggle {
+    position: fixed;
+    left: 0;
+    top: 0;
+    margin: 0;
+    padding: 0;
+    height: 24px;
+    width: 24px;
+    text-align: center;
+    background: url('../img/arrow_two_head_2.png') center center #666 no-repeat;
+    z-index: 10;
+    -webkit-transition: left 0.5s ease;
+}
+
+/* Footer */
+footer.site-footer {
+    width: 100%;
+    background-color: #fff;
+}
+#footer-nav {
+    width: 100%;
+    background-color: #eee;
+    border-top: 10px solid #666;
+    margin-top: 15px;
+}
+#footer-nav ul {
+    margin: 0 auto;
+    padding: 10px 0;
+    list-style: none;
+    text-align: center;
+}
+#footer-nav ul li {
+    display: inline;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 0.9em;
+}
+
+/* Nav Sidebar */
+#secondary ul {
+    padding: 0;
+    list-style: none;
+    margin: 10px 0 20px;
+}
+#secondary ul li a {
+    display: block;
+    background-color: #efefef;
+    padding: 12px 15px 12px 15px;
+    margin-bottom: 2px;
+}
+#secondary ul li.current-menu-item a {
+    background-color: #666;
+    color: #fff;
+}
+
+#secondary ul.sub-menu {
+    margin: 0 0 0 20px;
+}
+
+.menu-item-home {
+    display: none;
+}
+
+/* Homepage */
+#main-content p {
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+}
+#main-boxout {
+    float: right;
+    width: 185px;
+    border: 1px solid #eee;
+    margin: 87px 0 0 15px;
+    padding: 10px;
+}
+#main-boxout p {
+    margin-bottom: 5px;
+}
+#main-boxout.responsive {
+    display: none;
+}
+
+/* Pages */
+.page #primary {
+    max-width: 765px;
+    float: none;
+    overflow: hidden;
+    padding-right: 15px;
+}
+article.page ul {
+    margin: 15px 0 15px 0;
+    padding: 0;
+    list-style: none;
+}
+article.page ul li {
+    margin: 10px 10px 10px 0;
+    padding: 0 0 0 20px;
+    background: url(../img/bullet-point-7x7.gif) no-repeat 0 7px;
+    line-height: 1.5em;
+}
+.faqs {
+    margin-top: -1.5em;
+}
+.faqs h2 {
+    width: 100%;
+    border-top: 1px solid #317474;
+    font-size: 1.4em;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 30px;
+    border-radius: 0;
+}
+.biography {
+    width: 100%;
+    clear: both;
+    border-bottom: 1px solid #317474;
+    min-height: 205px;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+}
+.biography img {
+    float: left;
+    margin: 2px 15px 10px 0;
+    border: 1px solid #efefef;
+}
+
+/* Hearings */
+#main-hearings {
+    margin-bottom: 30px;
+}
+.hearing-entry {
+    font-size: 0.8em;
+    line-height: 2em;
+    padding: 8px 0 0 20px;
+    vertical-align: middle;
+}
+.hearing-entry.shaded {
+    background-color: #f2f2f2;
+}
+.hearing-entry .hearing-date {
+    width: 47.5%;
+    display: inline-block;
+    margin-bottom: 6px;
+}
+.hearing-entry .session-link {
+    width: 25%;
+    display: inline-block;
+    color: #999;
+}
+.hearing-entry .session-link a {
+    color: #317474;
+    padding: 4px 0;
+}
+.single-hearing .entry-header {
+    overflow: hidden;
+    padding-bottom: 40px;
+}
+.single-hearing .entry-header h1 {
+    margin-bottom: 0;
+}
+.single-hearing .entry-header h3 {
+    -webkit-margin-before: 0;
+}
+.single-hearing .video-nav {
+    text-align: center;
+    position: relative;
+    padding: 20px 0;
+    min-height: 75px;
+}
+.single-hearing .video-nav .nav-prev{
+    position: absolute;
+    left: 10px;
+    top: 25px;
+}
+.single-hearing.nav-next{
+    position: absolute;
+    right: 10px;
+    top: 25px;
+}
+.single-hearing .nav-prev {
+    float: left;
+    margin-top: 35px;
+}
+.single-hearing .nav-next {
+    float: right;
+    margin-top: 35px;
+}
+.single-hearing .title-container {
+    overflow: hidden;
+    margin: 0 64px;
+}
+.single-hearing .video-nav h4 {
+    margin: 25px 0;
+}
+.single-hearing .links-table h4 {
+    color: black;
+    font-weight: normal;
+    border-bottom: 2px solid #666;
+    padding: 2px 0;
+    text-transform: uppercase;
+}
+.single-hearing .links-table ul {
+    list-style: none;
+    margin: 0;
+    padding: 5px 0;
+}
+.single-hearing .links-table li {
+    padding: 5px 0;
+    font-size: 0.85em;
+}
+.page-hearings .entry-content ul li {
+    background: none;
+    margin: 0;
+    padding: 0;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+.page-documents-and-rulings .entry-content ul li {
+    background: none;
+    margin: 0;
+    padding: 0.3em 0;
+}
+.page-hearings .entry-content ul li ul li, .page-documents-and-rulings .entry-content ul li {
+    font-size: 0.9em;
+    font-weight: normal;
+}
+.page-hearings article.page ul, .page-documents-and-rulings article.page ul {
+    margin-top: 0;
+}
+
+/* Evidence */
+#main-evidence h4, .post-type-archive h4 {
+    color: black;
+    font-weight: normal;
+    border-bottom: 2px solid #666;
+    padding: 2px 0;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+#evidence-by-witness {
+    overflow: hidden;
+    padding-right: 15px;
+    float: none;
+}
+#evidence-by-witness .nav {
+    margin: 0 6px 15px;
+}
+#evidence-by-date {
+    float: right;
+}
+#evidence-by-date .datepicker {
+    height: 230px;
+}
+.evidence-nav-letter {
+    width: 28px;
+    line-height: 28px;
+    text-align: center;
+    margin: 0px 2px 6px;
+    display: inline-block;
+    cursor: pointer;
+    background-color: #efefef;
+}
+.evidence-nav-letter:hover {
+    color: white;
+    background-color: black;
+}
+.evidence-nav-letter.disabled {
+    color: #666;
+    cursor: default;
+    background-color: white;
+}
+.evidence-nav-letter.active {
+    background-color: #317474;
+    color: white;
+}
+#no-filter.evidence-nav-letter{
+    height: 0;
+}
+.results-header {
+    display: none;
+}
+.evidence-nav-witness {
+    display: none;
+    float: left;
+    width: 45%;
+    margin: 0.5em 5% 0.5em 0%;
+    line-height: 14px;
+}
+.post-type-archive-evidence .search-criteria, .post-type-archive-evidence .search-results {
+    margin: 15px 0;
+    overflow: hidden;
+}
+.results-line {
+    margin: 0 0 10px;
+}
+.short-date {
+    display: none;
+}
+.results-line div {
+    overflow: hidden;
+}
+#mobile-date-form {
+    display: none;
+}
+
+/* Documents and rulings */
+.documents-main h4 {
+    color: black;
+    font-weight: normal;
+    border-bottom: 2px solid #666;
+    padding: 2px 0;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+/* Lightbox */
+#blackout {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+    opacity: 0;
+    text-align: center;
+}
+#blackout:before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    margin-right: -0.25em; /* Adjusts for spacing */
+}
+#blackout #popup {
+    display: inline-block;
+}
+#blackout iframe {
+    display: inline-block;
+    vertical-align: middle;
+}
+#blackout .close a {
+    color: white;
+    float: right;
+    padding: 15px 30px;
+    text-transform: uppercase;
+    font-size: 10px;
+    background-color: #333;
+}
+/* Twitter link */
+.twitter {
+    text-align: center;
+    padding: 0 0 20px;
+}
+.twitter a {
+    line-height: 25px;
+    vertical-align: bottom;
+}
+
+/* Search form */
+#secondary .search-form {
+    margin: 10px 5px;
+}
+#secondary .search-form .search-field {
+    width: 135px;
+    font-size: 0.8em;
+}
+#secondary .search-form .search-submit {
+    font-size: 0.8em;
+    height: 21px;
+    padding-top: 4px;
+}
+
+/* Search results */
+.search-results h1.entry-title {
+    font-size: 1em;
+    color: black;
+    margin-top: 0;
+}
+.search-results h1.entry-title a {
+    color: black;
+}
+.search-results h2 {
+    font-size: 1.5em;
+    -webkit-margin-before: 0.7em;
+    -webkit-margin-after: 0.5em;
+}
+.search-results .no-results {
+    font-size: 1em;
+    -webkit-margin-before: 0.7em;
+    -webkit-margin-after: 0.5em;
+}
+
+/* Media queries */
+@media screen and (max-width: 768px) {
+    .page #primary, #primary {
+        margin-left: 15px;
+        padding-right: 0;
+    }
+    #main-boxout {
+        float: none;
+        width: auto;
+        border: 1px solid #eee;
+        margin: 20px 0 0 0;
+        padding: 0 10px;
+        display: none;
+    }
+    #main-boxout.responsive {
+        display: block;
+    }
+    #main-content {
+        max-width: none;
+    }
+    h1 {
+        font-size: 2em;
+        margin-top: 25px;
+    }
+    h2 {
+        font-size: 1.45em;
+        -webkit-margin-before: 0.33em;
+        -webkit-margin-after: 0.33em;
+    }
+    h3 {
+        margin: 5px 0;
+    }
+    p {
+        margin-bottom: 0.5em;
+        line-height: 1.5;
+    }
+    .highlighted-box {
+        margin: -1.5em 0 0;
+    }
+    .ui-accordion .ui-accordion-content {
+        overflow: hidden !important;
+    }
+    .ui-accordion .ui-accordion-header {
+        font-size: 1em !important;
+        font-weight: bold;
+        padding-left: 1.4em !important;
+    }
+
+    /* Responsive menu */
+    #secondary {
+        position: fixed;
+        top: 0;
+        left: -200px;
+        background-color: #666;
+        height: 100%;
+        -webkit-transition: left 0.5s ease;
+        z-index: 5;
+        margin: 0;
+        padding-top: 24px;
+        box-shadow: 0px 0px 10px 0px #333;
+    }
+    #secondary.toggled {
+        left: 0;
+    }
+    #secondary ul li a {
+        margin-bottom: 1px;
+    }
+    #secondary ul {
+        margin: 0;
+    }
+    h1.menu-toggle.toggled {
+        left: 200px;
+    }
+    .menu-item-home {
+        display: block;
+    }
+
+    /* Documents and rulings page */
+    .results-line {
+        font-size: 0.9em;
+    }
+
+    /* Date formats */
+    .short-date {
+        display: initial;
+    }
+    .long-date {
+        display: none;
+    }
+
+    /* Hearings page */
+    .hearing-entry .session-link {
+        width: 47.5%;
+        padding: 2px 0;
+        margin-bottom: 6px;
+    }
+    .hearing-entry .hearing-date {
+        width: auto;
+        display: block;
+    }
+    .hearing .entry-header {
+        margin-left: -15px;
+        margin-right: -15px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    .hearing .entry-header h1 {
+        font-size: 1.5em;
+    }
+    .hearing .entry-header h3 {
+        font-size: 1.15em;
+        margin: 10px 0 0;
+    }
+    .hearing .links-table .col-3 {
+        width: 100%;
+    }
+    #evidence-by-date {
+        float: none;
+    }
+    #evidence-by-witness {
+        padding-right: 0;
+    }
+    .datepicker {
+        display: none;
+    }
+    #mobile-date-form {
+        display: block;
+        margin-bottom: 20px;
+    }
+    .twitter {
+        border-bottom: 1px solid white;
+    }
+    .twitter a {
+        color: white;
+    }
+}
+
+h3 span.names {
+    display: block;
+    font-size: .85em;
+}

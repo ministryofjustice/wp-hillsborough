@@ -29,6 +29,7 @@
     "roots/wp-password-bcrypt": "*",
     "ministryofjustice/wp-rewrite-media-to-s3": "*",
     "wpackagist-plugin/google-analytics-dashboard-for-wp":"^5.3.7",
+    "wpackagist-plugin/wp-force-login": "*",
     "wpackagist-plugin/google-xml-sitemaps-v3-for-qtranslate":"^3.4.1",
     "wpackagist-plugin/uk-cookie-consent": "*",
     "wpackagist-plugin/wp-browser-update": "*",
